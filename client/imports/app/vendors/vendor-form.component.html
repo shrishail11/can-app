@@ -1,0 +1,7 @@
+<form [formGroup]="addForm" (ngSubmit)="addVendor()">
+    <label>Name</label>
+    <input type="text" formControlName="name">
+    <label>Mobile</label>
+    <input type="number" formControlName="mobile">
+    <button type="submit">Add</button>
+</form>

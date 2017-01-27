@@ -1,0 +1,8 @@
+
+<ul>
+  <li *ngFor="let vendor of vendors | async">
+    <b>  Name : {{vendor.name}} </b>
+      Contact : {{vendor.mobile}}
+      <a [routerLink]="['/vendor',vendor._id]">Details</a>
+  </li>
+</ul>

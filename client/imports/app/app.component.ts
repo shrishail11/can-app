@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-
-import { Vendors } from '../../../both/collections/vendors.collection';
-import { Vendor } from '../../../both/models/vendor.model';
+//import { Observable } from 'rxjs/Observable';
 
 import template from './app.component.html';
 
@@ -11,13 +8,4 @@ import template from './app.component.html';
   template
 })
 
-export class AppComponent{
-
-  vendors: Observable<Vendor[]>;
-
-  constructor(){
-    this.vendors = Vendors.find({}).zone();
-
-  }
-
-}
+export class AppComponent{}
