@@ -13,7 +13,9 @@ export function loadVendors() {
       a_city: 'test1',
       a_state: 'test1',
       a_country: 'test1',
-      a_zip: 11111
+      a_zip: 11111,
+      latt : '12121',
+      long : '232323'
     },
     {
       name: 'test2',
@@ -25,7 +27,9 @@ export function loadVendors() {
       a_city: 'test1',
       a_state: 'test1',
       a_country: 'test1',
-      a_zip: 11111
+      a_zip: 11111,
+      latt : '12121',
+      long : '232323'
     }];
 
     vendors.forEach((vendor: Vendor) => Vendors.insert(vendor));
