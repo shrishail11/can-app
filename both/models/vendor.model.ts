@@ -6,4 +6,5 @@ import { BaseCollectionObject } from './baseCollectionObject.model';
 export interface Vendor extends BaseCollectionObject{
   name: string;
   mobile: number;
+  
 }

@@ -6,10 +6,13 @@ export function loadHomeItems(){
     const homeItems: HomeItem[] = [{
       name: 'My Details',
       route_name: 'vendor'
+    },{
+      name: 'My Orders',
+      route_name: 'orders'
     }];
 
     homeItems.forEach((homeItem: HomeItem) => HomeItems.insert(homeItem));
-
+    
   }
 
 }

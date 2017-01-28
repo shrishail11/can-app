@@ -14,10 +14,13 @@ import template from './vendor-home.component.html';
 
 export class VendorHomeComponent{
 
+  public homeitemname : string;
+  public homeitemlink: string;
   homeItems: Observable<HomeItem[]>;
 
   constructor(){
     this.homeItems = HomeItems.find({}).zone();
-      console.log(this.homeItems);
+    this.homeitemname = '/vendor';
+    this.homeitemlink = '/vendor';
   }
 }

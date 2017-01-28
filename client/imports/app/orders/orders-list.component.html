@@ -1,0 +1,19 @@
+
+    <ul *ngFor="let order of  orderslist | async">
+        <li>
+          Name:  {{order.brand}} <br>
+          Size: {{order.size}} <br>
+          Qunatity:  {{order.quantity}} <br>
+          Ordered On:   {{order.order_date}} <br>
+          Deliver By:  {{order.deliver_by}} <br>
+          Payment Mode:    {{order.payment_mode}} <br>
+          Status:   {{order.status}} <br>
+          Delivered?:  {{order.delivered}} <br>
+          Delivered On:  {{order.delivered_on}} <br>
+          Payment Received?:  {{order.payment_received}} <br>
+
+
+        </li>
+        
+    </ul>
+ 
