@@ -23,16 +23,22 @@ export class VendorDetailsComponent implements OnInit,OnDestroy{
   ){}
 
   ngOnInit(){
+    
       this.paramsSub = this.route.params
-        .map( params => params['vendorId'])
+        .map( params => params['vendorId']
+        )
         .subscribe(vendorId => {
           this.vendorId = vendorId
           this.vendor = Vendors.findOne(this.vendorId);
         });
+      
   }
 
   ngOnDestroy() {
     this.paramsSub.unsubscribe();
   }
 
+  updateDetails(): void {
+    
+  }
 }

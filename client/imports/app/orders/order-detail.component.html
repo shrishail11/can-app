@@ -1,7 +1,4 @@
-
-    <ul *ngFor="let order of  orderslist | async">
-        <li>
-          Name:  {{order.brand}} <br>
+   Name:  {{order.brand}} <br>
           Size: {{order.size}} <br>
           Qunatity:  {{order.quantity}} <br>
           Ordered On:   {{order.order_date}} <br>
@@ -12,10 +9,4 @@
           Delivered On:  {{order.delivered_on}} <br>
           Payment Received?:  {{order.payment_received}} <br>
         
-        <a [routerLink]="['/vieworder',order._id]">View</a>
-
-        </li>
-        
-        
-    </ul>
- 
+        <a [routerLink]="['/editorder',order._id]">Edit</a>

@@ -31,6 +31,7 @@ export class VendorFormComponent implements OnInit{
     */
 
   }
+  
   addVendor(): void{
     if(this.addForm.valid){
       Vendors.insert(this.addForm.value);

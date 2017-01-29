@@ -1,0 +1,11 @@
+<form [formGroup]="editForm" (ngSubmit)="updateOrder()">
+    <label>Status</label>
+    <input type="text" formControlName="status"> <br>
+    <label>Delivered</label>
+    <input type="checkbox" formControlName="delivered"> <br>
+    <label>delivered_on</label>
+    <input type="number" formControlName="delivered_on"> <br>
+     <label>payment_received</label>
+    <input type="checkbox" formControlName="payment_received"> <br> 
+    <button type="submit">Update</button>
+</form>

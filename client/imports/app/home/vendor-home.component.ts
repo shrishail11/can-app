@@ -20,7 +20,5 @@ export class VendorHomeComponent{
 
   constructor(){
     this.homeItems = HomeItems.find({}).zone();
-    this.homeitemname = '/vendor';
-    this.homeitemlink = '/vendor';
   }
 }
