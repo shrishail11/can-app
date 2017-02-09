@@ -1,5 +1,32 @@
 
 <h1>My Details</h1>
-{{vendor.name}}
-{{vendor.mobile}}
+Name: {{vendor.name}}
+<br>
+Contact:
+Phone:{{vendor.phone.mobile}}<br>
+Mobile:{{vendor.phone.phone}}<br>
+Address:
+Steet: {{vendor.address.steet}}<br>
+City: {{vendor.address.city}}<br>
+State: {{vendor.address.state}}<br>
+Country: {{vendor.address.country}}<br>
+Zip: {{vendor.address.zip}}<br>
+
+<br>
+Location:
+
 <a [routerLink]="['/update']">Update</a>
+ <sebm-google-map
+    [latitude]=vendor.location.latitude
+    [longitude]=vendor.location.longitude
+    [zoom]="20"
+    (mapClick)="mapClicked($event)">
+
+      <sebm-google-map-marker
+    
+        [latitude]=vendor.location.latitude
+        [longitude]=vendor.location.longitude>
+      </sebm-google-map-marker>
+
+  </sebm-google-map>
+</sebm-google-map>

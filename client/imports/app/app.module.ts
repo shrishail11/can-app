@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AgmCoreModule } from 'angular2-google-maps/core';
 
 import { AppComponent } from './app.component';
 import { routes } from './app.routes';
@@ -14,7 +15,10 @@ import { ORDERS_DECLARATIONS } from './orders';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    AgmCoreModule.forRoot({
+      apiKey:'AIzaSyCwCPMpuvSZcTM_GxGvXqKIk4wV_C3D2T4'
+    })
   ],
   declarations: [
     AppComponent,
