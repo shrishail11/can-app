@@ -6,6 +6,8 @@ import { OrdersListComponent } from './orders/orders-list.component';
 import { VendorFormComponent } from './vendors/vendor-form.component';
 import { OrderEditFormComponent } from './orders/order-form.component';
 import { OrderDetailComponent } from './orders/order-detail.component';
+import { CustomersListComponent } from './customers/customers-list.component';
+import { OrderOptionsComponent } from './orders/order-options.component';
 
 export const routes: Route[]=[
 
@@ -22,9 +24,13 @@ export const routes: Route[]=[
     component: VendorFormComponent
   },
   {
-    path: 'orders/:vendorId',
-    component: OrdersListComponent
+    path: 'orderopts/:vendorId',
+    component: OrderOptionsComponent
   },
+  {
+    path: 'orders/:vendorId/:type',
+    component: OrdersListComponent
+  }, 
   {
     path: 'vieworder/:orderId',
     component: OrderDetailComponent
@@ -32,5 +38,9 @@ export const routes: Route[]=[
   {
     path: 'editorder/:orderId',
     component: OrderEditFormComponent
+  },
+  {
+    path: 'customers/:vendorId',
+    component: CustomersListComponent
   }
 ];

@@ -24,3 +24,5 @@ dispatch:mocha-phantomjs
 shell-server@0.2.1
 dburles:google-maps
 mdg:geolocation
+underscore
+mdg:validation-error

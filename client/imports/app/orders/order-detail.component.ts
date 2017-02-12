@@ -17,6 +17,7 @@ export class OrderDetailComponent{
     order: Order;
     orderId: string;
     paramsSub: Subscription;
+    orderedit: boolean;
 
     constructor(private route: ActivatedRoute){
         this.paramsSub = this.route.params
@@ -25,6 +26,11 @@ export class OrderDetailComponent{
             this.orderId = orderId
             this.order = Orders.findOne(this.orderId)
         });
+
+        if(this.order.order_type == 'new')
+            this.orderedit = true;
+        else
+            this.orderedit = false;
         
     }
 

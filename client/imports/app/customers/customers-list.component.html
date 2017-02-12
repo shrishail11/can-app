@@ -1,0 +1,31 @@
+
+<!--    <ul *ngFor="let customer of  custlist | async">
+        <li>
+          Name:  {{customer.name}} <br>
+        </li>
+        <li>
+          Phone :  {{customer.phone.mobile}} <br>
+        </li>
+        <li>
+          <ul *ngFor="let order of customer.orders" >
+           <li>Order :  {{order.order_id}} <br>
+           </li>
+          </ul>
+        </li>
+        
+        
+    </ul>
+-->
+
+    <ul *ngFor="let customer of  custlistOrder | async">
+        <li>
+          Name:  {{customer.customer.name}} <br>
+        </li>
+        <li>
+          Phone :  {{customer.customer.phone.mobile}} <br>
+        </li>
+       
+        
+        
+    </ul>
+     <a [routerLink]="['/']">Home</a>

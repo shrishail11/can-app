@@ -9,6 +9,7 @@ import { routes } from './app.routes';
 import { VENDORS_DECLARATIONS } from './vendors';
 import { VENDORS_HOME_DECLARATIONS } from './home';
 import { ORDERS_DECLARATIONS } from './orders';
+import { CUSTOMERS_DECLARATIONS } from './customers';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { ORDERS_DECLARATIONS } from './orders';
     AppComponent,
     ...VENDORS_DECLARATIONS,
     ...VENDORS_HOME_DECLARATIONS,
-    ...ORDERS_DECLARATIONS
+    ...ORDERS_DECLARATIONS,
+    ...CUSTOMERS_DECLARATIONS
   ],
   bootstrap: [
     AppComponent

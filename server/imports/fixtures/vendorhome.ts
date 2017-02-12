@@ -9,6 +9,9 @@ export function loadHomeItems(){
     },{
       name: 'My Orders',
       route_name: 'orders'
+    },{
+      name: 'My Customers',
+      route_name: 'customers'
     }];
 
     homeItems.forEach((homeItem: HomeItem) => HomeItems.insert(homeItem));

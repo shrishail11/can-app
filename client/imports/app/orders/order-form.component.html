@@ -1,11 +1,10 @@
 <form [formGroup]="editForm" (ngSubmit)="updateOrder()">
-    <label>Status</label>
-    <input type="text" formControlName="status"> <br>
+   
     <label>Delivered</label>
-    <input type="checkbox" formControlName="delivered"> <br>
-    <label>delivered_on</label>
-    <input type="number" formControlName="delivered_on"> <br>
-     <label>payment_received</label>
-    <input type="checkbox" formControlName="payment_received"> <br> 
+    <input type="text" formControlName="delivery_status"> <br>
+ 
+    <label>Delivered On</label>
+    <input type="text" formControlName="actual_delivery_date"> <br>
     <button type="submit">Update</button>
+    <button ><a [routerLink]="['/vieworder',order._id]">Back</a></button>
 </form>

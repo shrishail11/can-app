@@ -5,8 +5,11 @@
           Deliver By:  {{order.deliver_by}} <br>
           Payment Mode:    {{order.payment_mode}} <br>
           Status:   {{order.status}} <br>
-          Delivered?:  {{order.delivered}} <br>
-          Delivered On:  {{order.delivered_on}} <br>
+          Delivered?:  {{order.status.delivery_status}} <br>
+          Delivered On:  {{order.audit.actual_delivery_date}} <br>
           Payment Received?:  {{order.payment_received}} <br>
+          
+        <button> 
+        <a [routerLink]="['/editorder',order._id]" *ngIf="orderedit">Edit</a>
+        </button>
         
-        <a [routerLink]="['/editorder',order._id]">Edit</a>
